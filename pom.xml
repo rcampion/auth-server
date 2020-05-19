@@ -12,8 +12,8 @@
 	<properties>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
 		<spring.version>5.2.3.RELEASE</spring.version>
-		<hibernate.version>5.4.2.Final</hibernate.version>
-		<hibernate.validator>5.4.1.Final</hibernate.validator>
+		<hibernate.version>5.4.4.Final</hibernate.version>
+		<hibernate.validator>5.4.3.Final</hibernate.validator>
 		<c3p0.version>0.9.5.4</c3p0.version>
 		<jstl.version>1.2.1</jstl.version>
 		<tld.version>1.1.2</tld.version>
@@ -130,7 +130,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.17</version>
+			<version>8.0.20</version>
 		</dependency>
 
 		<dependency>

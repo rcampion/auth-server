@@ -38,10 +38,13 @@ public class AppConfig {
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 
-		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
+		// dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
+		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 		dataSource.setUsername("auth_user");
 		dataSource.setPassword("ChangeIt");
-		dataSource.setUrl("jdbc:mysql://localhost:3306/auth?createDatabaseIfNotExist=true");
+		
+		// dataSource.setUrl("jdbc:mysql://localhost:3306/auth?createDatabaseIfNotExist=true");
+		dataSource.setUrl("jdbc:mysql://localhost:3306/auth?createDatabaseIfNotExist=true&serverTimezone=UTC&useLegacyDatetimeCode=false");
 
 		return dataSource;
 	}
